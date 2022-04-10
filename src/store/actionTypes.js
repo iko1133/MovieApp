@@ -1,0 +1,8 @@
+export const SWITCH_THEME = "SWITCH_THEME";
+
+export const SET_FAVORITES = "SET_FAVORITES";
+export const ADD_FAVORITE = "ADD_FAVORITE";
+export const DELETE_FAVORITE = "DELETE_FAVORITE";
+
+export const SET_HIDDEN_MOVIES = "SET_HIDDEN_MOVIES";
+export const ADD_HIDDEN_MOVIE = "ADD_HIDDEN_MOVIE";
