@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing LoadingText Renders LoadingText 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "fontSize": 20,
+          "fontWeight": "700",
+          "marginTop": 12,
+        },
+      ]
+    }
+  >
+    Loading...
+  </Text>
+</View>
+`;
+
+exports[`Testing LoadingText Renders default loading text with different text 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "fontSize": 20,
+          "fontWeight": "700",
+          "marginTop": 12,
+        },
+      ]
+    }
+  >
+    Updated loading text...
+  </Text>
+</View>
+`;

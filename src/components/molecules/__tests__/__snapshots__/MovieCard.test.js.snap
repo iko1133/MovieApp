@@ -1,0 +1,417 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing MovieCard Renders MovieCard 1`] = `
+<View
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "flexDirection": "row",
+      "opacity": 1,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "https://imdb-api.com/images/original/MV5BNzhlY2E5NDUtYjJjYy00ODg3LWFkZWQtYTVmMzU4ZWZmOWJkXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_Ratio0.7273_AL_.jpg",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "aspectRatio": 1,
+          "borderRadius": 6,
+          "width": "100%",
+        },
+      ]
+    }
+  />
+  <View
+    accessible={true}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#1F1F1FAA",
+        "borderRadius": 8,
+        "height": 40,
+        "justifyContent": "center",
+        "opacity": 1,
+        "position": "absolute",
+        "right": 4,
+        "top": 4,
+        "width": 40,
+      }
+    }
+  >
+    <RNSVGSvgView
+      bbHeight={24}
+      bbWidth={24}
+      focusable={false}
+      height={24}
+      stroke="#FFF"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        propList={
+          Array [
+            "stroke",
+          ]
+        }
+        stroke={4294967295}
+      >
+        <RNSVGPath
+          d="M12 4.248C8.852-1.154 0 .423 0 7.192 0 11.853 5.571 16.619 12 23c6.43-6.381 12-11.147 12-15.808C24 .4 15.125-1.114 12 4.248z"
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    accessible={true}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#1F1F1FAA",
+        "borderRadius": 8,
+        "height": 40,
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 8,
+        "paddingRight": 8,
+        "paddingTop": 8,
+        "position": "absolute",
+        "right": 4,
+        "top": 54,
+        "width": 40,
+      }
+    }
+  >
+    <RNSVGSvgView
+      bbHeight={20}
+      bbWidth={20}
+      focusable={false}
+      height={20}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "flex": 0,
+            "height": 20,
+            "width": 20,
+          },
+        ]
+      }
+      width={20}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup>
+        <RNSVGGroup
+          fill={null}
+          propList={
+            Array [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={4294967295}
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={1.5}
+        >
+          <RNSVGPath
+            d="m12.109 7.892-4.217 4.217a2.982 2.982 0 1 1 4.217-4.217Z"
+          />
+          <RNSVGPath
+            d="M14.846 4.808A8.026 8.026 0 0 0 10 3.108c-2.941 0-5.683 1.733-7.592 4.733a4.438 4.438 0 0 0 0 4.325 11.939 11.939 0 0 0 2.259 2.642M7.017 16.275a7.679 7.679 0 0 0 2.983.617c2.942 0 5.683-1.733 7.592-4.733a4.438 4.438 0 0 0 0-4.325 13.518 13.518 0 0 0-.883-1.226"
+          />
+          <RNSVGPath
+            d="M12.925 10.583a2.971 2.971 0 0 1-2.35 2.35M7.892 12.108l-6.225 6.225M18.333 1.667l-6.225 6.225"
+          />
+        </RNSVGGroup>
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#1F1F1FAA",
+          "bottom": 0,
+          "paddingBottom": 4,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 4,
+          "position": "absolute",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontSize": 18,
+          },
+        ]
+      }
+    >
+      Lost
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Testing MovieCard Renders movie card with given item 1`] = `
+<View
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "flexDirection": "row",
+      "opacity": 1,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "https://imdb-api.com/images/original/MV5BODllNWE0MmEtYjUwZi00ZjY3LThmNmQtZjZlMjI2YTZjYmQ0XkEyXkFqcGdeQXVyNTc1NTQxODI@._V1_Ratio0.7273_AL_.jpg",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "aspectRatio": 1,
+          "borderRadius": 6,
+          "width": "100%",
+        },
+      ]
+    }
+  />
+  <View
+    accessible={true}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#1F1F1FAA",
+        "borderRadius": 8,
+        "height": 40,
+        "justifyContent": "center",
+        "opacity": 1,
+        "position": "absolute",
+        "right": 4,
+        "top": 4,
+        "width": 40,
+      }
+    }
+  >
+    <RNSVGSvgView
+      bbHeight={24}
+      bbWidth={24}
+      focusable={false}
+      height={24}
+      stroke="#FFF"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup
+        propList={
+          Array [
+            "stroke",
+          ]
+        }
+        stroke={4294967295}
+      >
+        <RNSVGPath
+          d="M12 4.248C8.852-1.154 0 .423 0 7.192 0 11.853 5.571 16.619 12 23c6.43-6.381 12-11.147 12-15.808C24 .4 15.125-1.114 12 4.248z"
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    accessible={true}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#1F1F1FAA",
+        "borderRadius": 8,
+        "height": 40,
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 8,
+        "paddingRight": 8,
+        "paddingTop": 8,
+        "position": "absolute",
+        "right": 4,
+        "top": 54,
+        "width": 40,
+      }
+    }
+  >
+    <RNSVGSvgView
+      bbHeight={20}
+      bbWidth={20}
+      focusable={false}
+      height={20}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "flex": 0,
+            "height": 20,
+            "width": 20,
+          },
+        ]
+      }
+      width={20}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <RNSVGGroup>
+        <RNSVGGroup
+          fill={null}
+          propList={
+            Array [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeLinecap",
+              "strokeLinejoin",
+            ]
+          }
+          stroke={4294967295}
+          strokeLinecap={1}
+          strokeLinejoin={1}
+          strokeWidth={1.5}
+        >
+          <RNSVGPath
+            d="m12.109 7.892-4.217 4.217a2.982 2.982 0 1 1 4.217-4.217Z"
+          />
+          <RNSVGPath
+            d="M14.846 4.808A8.026 8.026 0 0 0 10 3.108c-2.941 0-5.683 1.733-7.592 4.733a4.438 4.438 0 0 0 0 4.325 11.939 11.939 0 0 0 2.259 2.642M7.017 16.275a7.679 7.679 0 0 0 2.983.617c2.942 0 5.683-1.733 7.592-4.733a4.438 4.438 0 0 0 0-4.325 13.518 13.518 0 0 0-.883-1.226"
+          />
+          <RNSVGPath
+            d="M12.925 10.583a2.971 2.971 0 0 1-2.35 2.35M7.892 12.108l-6.225 6.225M18.333 1.667l-6.225 6.225"
+          />
+        </RNSVGGroup>
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#1F1F1FAA",
+          "bottom": 0,
+          "paddingBottom": 4,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 4,
+          "position": "absolute",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontSize": 18,
+          },
+        ]
+      }
+    >
+      Léon: The Professional
+    </Text>
+  </View>
+</View>
+`;

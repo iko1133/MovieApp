@@ -6,8 +6,10 @@ import * as CONSTANTS from "config/constants";
 import { addFavorite, deleteFavorite } from "store/actions/favorites";
 import { searchMovies } from "store/actions/movies";
 import { hideMovie } from "store/actions/hidden";
+import LoadingText from "components/molecules/LoadingText";
 import MovieCard from "molecules/MovieCard";
 import Screen from "atoms/Screen";
+import EmptyListText from "components/molecules/EmptyListText";
 
 const Container = styled(Screen)``;
 
@@ -40,6 +42,7 @@ const MoviesList = ({ navigation }) => {
   const [moviesList, setMoviesList] = useState([]);
   const [bounceTimerId, setBounceTimerId] = useState();
   const [searched, setSearched] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const favorites = useSelector((state) => state.favorites);
   const hidden = useSelector((state) => state.hidden);
@@ -67,6 +70,7 @@ const MoviesList = ({ navigation }) => {
 
     const currTimer = setTimeout(() => {
       setMoviesList([]);
+      setLoading(true);
       loadItems();
     }, CONSTANTS.SEARCH_DEBOUNCE_TIME);
 
@@ -75,6 +79,8 @@ const MoviesList = ({ navigation }) => {
 
   const loadItems = async () => {
     const res = await dispatch(searchMovies(searched));
+    setLoading(false);
+
     if (res) setMoviesList(filterListFromHidden(res));
     else alert("Something went wrong");
   };
@@ -99,7 +105,8 @@ const MoviesList = ({ navigation }) => {
             <SearchInput placeholder="Search" onChangeText={setSearched} />
           </ListHeaderContainer>
         }
-        data={searched ? moviesList : favorites}
+        ListEmptyComponent={loading ? LoadingText : EmptyListText}
+        data={moviesList}
         renderItem={({ item }) => (
           <ListItemCard
             item={item}

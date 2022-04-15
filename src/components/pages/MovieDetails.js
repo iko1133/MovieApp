@@ -8,19 +8,13 @@ import { addFavorite, deleteFavorite } from "store/actions/favorites";
 import { hideMovie } from "store/actions/hidden";
 import Eye from "assets/icons/Eye";
 import FilledHeart from "assets/icons/FilledHeart";
+import LoadingText from "components/molecules/LoadingText";
 import IMDB from "assets/icons/IMDB";
 import Screen from "atoms/Screen";
 
 const PAGE_WIDTH = Dimensions.get("window").width - 24;
 
 const Container = styled(Screen)``;
-
-const LoadingText = styled.Text`
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: 12px;
-  text-align: center;
-`;
 
 const InnerContainer = styled.ScrollView`
   padding: 12px;

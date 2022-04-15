@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components/native";
 import { ThemeProvider } from "styled-components/native";
 import { NavigationContainer } from "@react-navigation/native";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import NetInfo from "@react-native-community/netinfo";
 
 import * as CONSTANTS from "config/constants";
+import { setFavorites } from "store/actions/favorites";
 import { storeObject } from "helpers/storageHelper";
-import HomeNavigator from "./HomeNavigator";
+import AppNavigator from "./AppNavigator";
 
 const ConnectionLostTextContainer = styled.SafeAreaView`
   background-color: red;
@@ -28,6 +29,8 @@ const AppNavigatorWrapper = (props) => {
   const favorites = useSelector((state) => state.favorites);
   const hidden = useSelector((state) => state.hidden);
 
+  const dispatch = useDispatch();
+
   const [connectionAlive, setConnectionAlive] = useState(true);
 
   const storeFavorites = () => {
@@ -44,6 +47,17 @@ const AppNavigatorWrapper = (props) => {
 
   useEffect(() => {
     storeHiddenMovies();
+
+    // Checking if any favorite movies were hidden
+    const filteredFavorites = favorites.filter(
+      (favoriteMovie) =>
+        hidden.find((hiddenMovieId) => hiddenMovieId === favoriteMovie.id) ===
+        undefined
+    );
+
+    // If favorites length and filtered favorites lengths are different, that means a favorite movie was hidden
+    if (filteredFavorites.length !== favorites.length)
+      dispatch(setFavorites(filteredFavorites));
   }, [hidden]);
 
   useEffect(() => {
@@ -55,7 +69,7 @@ const AppNavigatorWrapper = (props) => {
   return (
     <ThemeProvider theme={theme}>
       <NavigationContainer>
-        <HomeNavigator />
+        <AppNavigator />
 
         {!connectionAlive && (
           <ConnectionLostTextContainer>

@@ -1,6 +1,11 @@
 // NAVIGATION
+export const HOME_NAVIGATOR = "homeNavigator";
 export const HOME_SCREEN = "home";
 export const HOME_ITEM_DETAILS = "homeItemDetails";
+
+export const FAVORITES_NAVIGATOR = "favoritesNavigator";
+export const FAVORITES_SCREEN = "favoritesScreen";
+export const FAVORITE_ITEM_DETAILS = "favoriteItemDetails";
 
 export const NO_TITLE_OPTIONS = {
   headerShown: false,

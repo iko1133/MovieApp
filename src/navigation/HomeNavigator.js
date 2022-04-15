@@ -7,6 +7,10 @@ import MovieDetails from "pages/MovieDetails";
 
 const HomeStack = createStackNavigator();
 
+const movieDetailsScreenOptions = {
+  title: "Details",
+};
+
 /**
  * Main, home navigator of application
  */
@@ -22,6 +26,7 @@ const HomeNavigator = (props) => {
       <HomeStack.Screen
         name={CONSTANTS.HOME_ITEM_DETAILS}
         component={MovieDetails}
+        options={movieDetailsScreenOptions}
       />
     </HomeStack.Navigator>
   );
