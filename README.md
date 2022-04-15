@@ -31,3 +31,11 @@ this will open up browser with a QR code, you should scan the QR code with your 
 Or, run on an emulated device by pressing (in the terminal which runs the expo start command)
 a - for an Android device
 i - for an iOS device
+
+## Running tests
+
+After installation, runt tests with:
+
+```
+npm test
+```
